@@ -1,0 +1,64 @@
+.hero {
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+section {
+	display: block;
+}
+
+.hero__title {
+	color: var(--main-white-color);
+	font-size: 44px;
+	line-height: 1.36;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	text-align: center;
+	width: 696px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.hero__button {
+	width: 216px;
+	height: 50px;
+	background-color: var(--highlight-color);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.875;
+	letter-spacing: 0.06em;
+	color: var(--main-white-color);
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: inherit;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+		background-color: var(--button-active-color);
+		color: var(--main-white-color);
+	}
+	&:focus {
+		background-color: var(--button-active-color);
+		color: var(--main-white-color);
+	}
+	&:active {
+		background-color: var(--button-active-color);
+		color: var(--main-white-color);
+	}
+}
+
+// .button:hover {
+// 	background-color: var(--button-active-color);
+// 	color: var(--main-white-color);
+// }
+// .button:focus {
+// 	background-color: var(--button-active-color);
+// 	color: var(--main-white-color);
+// }
+// .button:active {
+// 	background-color: var(--button-active-color);
+// 	color: var(--main-white-color);
+// }

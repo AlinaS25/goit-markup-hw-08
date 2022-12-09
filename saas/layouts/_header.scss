@@ -1,0 +1,121 @@
+.header {
+	border-bottom: 1px solid var(--card-border-color);
+}
+
+.header__container {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.header__navigation {
+	display: flex;
+	margin-right: auto;
+	align-items: center;
+}
+.logo__header {
+	margin-right: 93px;
+
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	line-height: 1.19;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+}
+.logo-h1 {
+	color: var(--highlight-color);
+}
+
+.menu {
+	display: flex;
+	gap: 50px;
+	padding-top: 32px;
+}
+
+// .nav-ul-flex .link-header:hover,
+// .nav-ul-flex .link-header:focus {
+// 	color: var(--highlight-color);
+// }
+// .nav-ul-flex .link-header.current {
+// 	color: var(--highlight-color);
+// }
+.current:after {
+	display: block;
+	content: "";
+	width: 108%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--highlight-color);
+	margin-top: 28px;
+	transform: translateX(-4%);
+}
+
+.menu__link {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: 0.02em;
+	color: var(--main-text-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.menu &:hover,
+.menu &:focus {
+	color: var(--highlight-color);
+}
+.menu &.current {
+	color: var(--highlight-color);
+}
+}
+
+.menu__contacts {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.contacts-icon {
+	margin-right: 10px;
+	.contacts__number:hover & {
+		fill: var(--highlight-color);
+	}
+	.contacts__mail:hover & {
+		fill: var(--highlight-color);
+	}
+}
+// .link-header-number:hover .contacts-icon {
+// 	fill: var(--highlight-color);
+// }
+// .link-header-mail:hover .contacts-icon {
+// 	fill: var(--highlight-color);
+// }
+
+.contacts__mail {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	color: var(--secondary-text-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+&:focus {
+	color: var(--highlight-color);
+}
+}
+
+// .link-header-mail:hover,
+// .link-header-mail:focus {
+// 	color: var(--highlight-color);
+// }
+.contacts__number {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	color: var(--secondary-text-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+&:focus {
+	color: var(--highlight-color);
+}
+}
+// .link-header-number:hover,
+// .link-header-number:focus {
+// 	color: var(--highlight-color);
+// }
