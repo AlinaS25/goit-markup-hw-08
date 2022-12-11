@@ -6,12 +6,13 @@
 .footer-content {
 	gap: 9px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 }
 .text-logo-footer {
 	font-family: "Raleway", sans-serif;
-	font-size: 26px;
-	line-height: 1.19;
+	font-size: 24px;
+	line-height: 1.17;
 	font-weight: 700;
 	letter-spacing: 0.03em;
 	color: var(--main-white-color);
