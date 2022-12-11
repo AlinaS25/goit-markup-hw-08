@@ -1,8 +1,13 @@
 .our__works {
 	text-align: center;
 	width: 100%;
-
 	padding-bottom: 94px;
+    display: none;
+		
+	@include desktop {
+		display: block;
+		
+	}
 }
 .works__title {
 	font-weight: 700;

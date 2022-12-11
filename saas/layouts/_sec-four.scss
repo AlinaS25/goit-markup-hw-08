@@ -53,18 +53,7 @@
 	justify-content: center;
 	margin-top: 16px;
 	gap: 10px;
-	@media screen and (min-width: 768px) {
-		width: calc((100% - 30px) / 2);
-		justify-content: center;
-		text-align: center;
-		gap: 10px;
-	}
-	@media screen and (min-width: 1200px) {
-		width: calc((100% - 90px) / 4);
-		justify-content: center;
-		text-align: center;
-		gap: 10px;
-	}
+
 }
 .social-icons-item {
 	height: 44px;
