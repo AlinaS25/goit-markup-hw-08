@@ -160,6 +160,16 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 color: var(--main-text-color);
 }
+.menu-list__link:active{
+	color: var(--highlight-color);
+}
+.menu-list__link:hover,
+.menu-list__link:focus{
+	color: var(--highlight-color);
+}
+.name{
+	color: var(--highlight-color);
+}
 .mob-list-contacts{
 	display: flex;
 	flex-direction: column;
@@ -167,7 +177,7 @@ color: var(--main-text-color);
 }
 .mob-menu__tel{
 	font-weight:500 ;
-	font-size: 34px;
+	font-size: 20px;
 	line-height: 1.17;
 	letter-spacing: 0.02em;
 	color: var(--highlight-color);
@@ -183,17 +193,17 @@ font-size: 34px;
 
 .mob-menu__email{
 	font-weight: 500;
-font-size: 24px;
+font-size: 18px;
 line-height: 1.16;
 letter-spacing: 0.02em;
-color: var(--highlight-color);
+color: var(--secondary-text-color);
 @media screen and (min-width: 480px) {
-	font-size: 34px;
+	font-size: 24px;
 	}
 }
 .mob-menu__email:hover,
 .mob-menu__email:focus{
-	color: var(--secondary-text-color);
+	color: var(--highlight-color);
 }
 
 .mob-soc{
