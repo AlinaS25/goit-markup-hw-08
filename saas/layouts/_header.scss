@@ -126,6 +126,9 @@ margin-left: auto;
 }
 
 .mob-menu{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -163,7 +166,6 @@ color: var(--main-text-color);
 	gap: 32px;
 }
 .mob-menu__tel{
-	font-weight: 500;
 	font-size: 34px;
 	line-height: 1.17;
 	letter-spacing: 0.02em;
@@ -172,7 +174,6 @@ color: var(--main-text-color);
 
 }
 .mob-menu__email{
-	font-weight: 500;
 font-size: 24px;
 line-height: 1.16;
 letter-spacing: 0.02em;
@@ -203,5 +204,5 @@ margin-top: 64px;
 }
 .mob-soc__item{
 	padding-right: 10px;
-	border-right: 1px solid #757575;
+	border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
