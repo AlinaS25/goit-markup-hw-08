@@ -456,8 +456,8 @@ body {
   position: fixed;
   top: 0;
   z-index: 100;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   background-color: var(--main-white-color);
   padding: 48px 40px;
 }
@@ -505,35 +505,39 @@ body {
 }
 
 .mob-menu__tel {
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: var(--highlight-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu__tel {
+    font-size: 34px;
+  }
 }
 
-.mob-menu__email {
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
+.mob-menu__tel:hover,
+.mob-menu__tel:focus {
   color: var(--secondary-text-color);
 }
 
-.mob-menu__tel,
-.mob-menu__email:hover {
-  color: var(--highlight-color);
-}
-
-.mob-menu__tel,
-.mob-menu__email:focus {
-  color: var(--highlight-color);
-}
-
-.mob-soc__link {
+.mob-menu__email {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--highlight-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu__email {
+    font-size: 34px;
+  }
+}
+
+.mob-menu__email:hover,
+.mob-menu__email:focus {
+  color: var(--secondary-text-color);
 }
 
 .mob-soc {
@@ -544,6 +548,19 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 64px;
+}
+
+.mob-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--highlight-color);
+}
+
+.mob-soc__link:hover,
+.mob-soc__link:focus {
+  color: var(--secondary-text-color);
 }
 
 .mob-soc__item {
