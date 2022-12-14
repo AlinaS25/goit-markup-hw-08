@@ -461,6 +461,11 @@ body {
   background-color: var(--main-white-color);
   padding: 48px 40px;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 
 .menu-close {
   position: absolute;
@@ -576,7 +581,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.mob-soc__item {
+.mob-soc__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }

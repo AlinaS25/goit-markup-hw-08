@@ -52,16 +52,16 @@
 						</a>
 					</li>
 				</ul>
-				<button class="menu-open" type="button">
+				<button class="menu-open" type="button" data-modal-open>
 					<svg class="menu-icon-open" width="40" height="40">
 						<use href="./img/icons.svg#icon-menu_open">
 						</use>
 					</svg>
 				</button>
 			</div>
-			<div class="mob-menu">
+			<div class="mob-menu" is-hidden data-modal>
 				<div class="menu-top">
-<button class="menu-close" type="button">
+<button class="menu-close" type="button" data-modal-close>
 	<svg class="menu-icon-close" width="40" height="40">
 		<use href="./img/icons.svg#icon-close-menu">
 		</use>
@@ -565,5 +565,6 @@
 		</div>
 
 		<script src="./js/modal.js"></script>  -->
+		<script src="./js/menu.js"></script>
 	 </body>
 </html>   
