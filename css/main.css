@@ -452,7 +452,6 @@ body {
   padding: 48px 40px;
 }
 .mob-menu > .container {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,25 +545,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 20px;
-  margin-top: 64px;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.mob-soc::after {
-  position: absolute;
-  content: "";
+.mob-soc__item {
+  padding-right: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.mob-soc__link {
-  color: var(--highlight-color);
 }
 
 .hero {
