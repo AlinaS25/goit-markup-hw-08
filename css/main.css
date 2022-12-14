@@ -40,7 +40,6 @@ a {
 button {
   border: none;
   outline: none;
-  margin: 0 auto;
   display: block;
 }
 
@@ -440,6 +439,7 @@ body {
 
 .menu-open {
   margin-left: auto;
+  background-color: transparent;
 }
 
 .mob-menu {
