@@ -390,9 +390,21 @@ body {
 .menu__contacts {
   display: none;
   gap: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .menu__contacts {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contacts-icon {
@@ -420,6 +432,11 @@ body {
 .contacts__mail:hover, .contacts__mail:focus {
   color: var(--highlight-color);
 }
+@media screen and (min-width: 768px) {
+  .contacts__mail {
+    padding-bottom: 10px;
+  }
+}
 
 .contacts__number {
   display: -webkit-box;
@@ -440,6 +457,11 @@ body {
 .menu-open {
   margin-left: auto;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .mob-menu {

@@ -71,7 +71,13 @@
 .menu__contacts {
 	display: none;
 	gap: 30px;
+	@media screen and (min-width:768px) {
+		display: block;
+	}
+	@media screen and (min-width:1200px) {
+	display: flex;
 	align-items: center;
+	}
 }
 
 .contacts-icon {
@@ -100,6 +106,9 @@
 &:focus {
 	color: var(--highlight-color);
 }
+@media screen and (min-width:768px) {
+	padding-bottom: 10px;
+}
 }
 
 // .link-header-mail:hover,
@@ -124,6 +133,9 @@
 .menu-open{
 margin-left: auto;
 background-color: transparent;
+@media screen and (min-width:768px) {
+	display: none;
+}
 }
 
 .mob-menu{
