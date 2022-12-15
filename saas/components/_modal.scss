@@ -1,6 +1,6 @@
 .modal {
-	width: 528px;
-	min-height: 580px;
+	width: 450px;
+	min-height: 609px;
 	background-color: var(--main-white-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -9,6 +9,15 @@
 	top: 50%;
 	left: 50%;
 	padding: 40px;
+	@media screen and (min-width:768px) {
+		width: 528px;
+		height: 581px;
+		
+	}
+	@media screen and (min-width:1200px) {
+		width: 528px;
+		height: 581px;
+	}
 }
 .modal-close {
 	position: absolute;
@@ -28,6 +37,7 @@
 	&:focus .modal-close-icon {
 		fill: var(--button-active-color);
 	}	
+
 }
 // .modal-close:hover .modal-close-icon,
 // .modal-close:focus .modal-close-icon {
@@ -48,6 +58,22 @@
 	letter-spacing: 0.03em;
 	margin-bottom: 12px;
 	color: var(--main-text-color);
+	@include tablet {
+		font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-text-color);
+	}
+	@include desktop {
+		font-weight: 700;
+	font-size: 20px;
+	line-height: calc(23/20);
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-text-color);
+	}
 }
 
 .modal-field {
@@ -62,15 +88,28 @@
 .input-label {
 	color: var(--secondary-text-color);
 	font-weight: 400;
+	font-size: 12px;
+line-height: calc(14/12);
+letter-spacing: 0.01em;
+margin-bottom: 4px;
+
 }
 
 .check-text {
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
-	color: var(--secondary-text-color);
 	display: flex;
 	align-items: center;
+	font-size: 12px;
+	line-height: calc(14/12);
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
+	@include desktop {
+		font-size: 14px;
+line-height: calc(24/14);
+	}
+	@include tablet {
+		font-size: 12px;
+	line-height: calc(14/12);
+	}
 }
 .check-text span {
 	width: 16px;
@@ -115,6 +154,14 @@
 	line-height: 1.7;
 	text-decoration: underline;
 	margin-left: 5px;
+	@include desktop {
+		font-size: 14px;
+line-height: calc(24/14);
+	}
+	@include tablet {
+		font-size: 12px;
+	line-height: calc(14/12);
+	}
 }
 
 .modal-input {
@@ -159,10 +206,9 @@
 outline-color: var(--highlight-color);
 }
 &::placeholder {
-	font-size: 12px;
 	color: #303030;
-	font-size: 12px;
-	line-height: 1.16;
+	font-size: 14px;
+	line-height: calc(16/14);
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
 }
@@ -187,6 +233,8 @@ outline-color: var(--highlight-color);
 	margin-top: 28px;
 }
 .input-button {
+	display: block;
+	margin: 0 auto;
 	width: 200px;
 	height: 50px;
 	font-weight: 700;
