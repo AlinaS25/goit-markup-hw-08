@@ -12,6 +12,9 @@
 	display: flex;
 	margin-right: auto;
 	align-items: center;
+	@media screen and (min-width:768px) {
+		display: flex;
+	}
 }
 .logo__header {
 	margin-right: 93px;
@@ -30,7 +33,12 @@
 	display: none;
 	gap: 50px;
 	padding-top: 32px;
-
+	@media screen and (min-width:768px) {
+		display: flex;
+	}
+	@media screen and (min-width:1200px) {
+		display: flex;
+	}
 }
 
 // .nav-ul-flex .link-header:hover,
@@ -66,6 +74,7 @@
 .menu &.current {
 	color: var(--highlight-color);
 }
+
 }
 
 .menu__contacts {
@@ -76,7 +85,7 @@
 	}
 	@media screen and (min-width:1200px) {
 	display: flex;
-	align-items: center;
+	 
 	}
 }
 
