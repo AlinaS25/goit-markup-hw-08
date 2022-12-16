@@ -11,12 +11,12 @@
 	padding: 40px;
 	@media screen and (min-width:768px) {
 		width: 528px;
-		height: 581px;
+		min-height: 581px;
 		
 	}
 	@media screen and (min-width:1200px) {
 		width: 528px;
-		height: 581px;
+		min-height: 581px;
 	}
 }
 .modal-close {
@@ -102,14 +102,15 @@ margin-bottom: 4px;
 	line-height: calc(14/12);
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
-	@include desktop {
-		font-size: 14px;
-line-height: calc(24/14);
-	}
 	@include tablet {
 		font-size: 12px;
 	line-height: calc(14/12);
 	}
+	@include desktop {
+		font-size: 14px;
+line-height: calc(24/14);
+	}
+	
 }
 .check-text span {
 	width: 16px;
@@ -150,18 +151,19 @@ line-height: calc(24/14);
 .input-policy {
 	color: var(--highlight-color);
 	letter-spacing: 0.03em;
-	font-size: 14px;
-	line-height: 1.7;
+	font-size: 12px;
+	line-height: calc(14/12);
 	text-decoration: underline;
 	margin-left: 5px;
-	@include desktop {
-		font-size: 14px;
-line-height: calc(24/14);
-	}
 	@include tablet {
 		font-size: 12px;
 	line-height: calc(14/12);
 	}
+	@include desktop {
+		font-size: 14px;
+line-height: calc(24/14);
+	}
+	
 }
 
 .modal-input {
