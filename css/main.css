@@ -690,6 +690,7 @@ body {
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -745,7 +746,7 @@ section {
 @media screen and (min-width: 769px) {
   .hero__title {
     font-size: 26px;
-    width: 696px;
+    line-height: 1.4;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1253,6 +1254,11 @@ section {
   color: var(--main-white-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .text-logo-footer {
+    display: inline-block;
+  }
+}
 
 .footer-icons {
   width: 44px;
@@ -1290,6 +1296,11 @@ section {
 .footer-links:hover, .footer-links:focus {
   color: var(--highlight-color);
 }
+@media screen and (min-width: 1200px) {
+  .footer-links {
+    display: inline-block;
+  }
+}
 
 .social-footer-wrap .social-media-icons {
   fill: #fff;
@@ -1303,6 +1314,11 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .join-us-header {
+    display: inline-block;
+  }
 }
 
 .container-wrap {
@@ -1399,6 +1415,11 @@ section {
   color: var(--main-white-color);
   text-align: center;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .sign-title {
+    display: inline-block;
+  }
 }
 
 .input-footer {
