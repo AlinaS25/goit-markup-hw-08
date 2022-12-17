@@ -9,6 +9,7 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	gap: 9px;
+	
 }
 .text-logo-footer {
 	display: block;
@@ -88,6 +89,17 @@
 	flex-direction: column;
 	gap: 93px;
 	align-items: center;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: baseline;
+		flex-direction: row;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 .backdrop {
@@ -101,7 +113,18 @@
 
 .footer-form {
 	display: flex;
+	flex-direction: column;
 	gap: 12px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+		
+	}
 }
 .sign-title {
 	font-weight: 700;
@@ -139,6 +162,14 @@
 		&:hover{
 			border-color: var(--highlight-color);
 		}
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-direction: row;
+		}
+		@media screen and (min-width: 1200px) {
+			display: flex;
+			flex-direction: row;
+		}
 }
 
 // .input-footer:focus{
@@ -148,7 +179,8 @@
 // 	border-color: var(--highlight-color);
 // }
 .input-button-footer {
-	display: block;
+	display: flex;
+	align-items: center;
 	margin: 0 auto;
 	width: 200px;
 	height: 50px;
